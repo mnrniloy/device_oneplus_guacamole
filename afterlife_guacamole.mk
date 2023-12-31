@@ -15,8 +15,8 @@ $(call inherit-product, device/oneplus/guacamole/device.mk)
 $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # AfterLife Flags
-AFTERLIFE_CORE := true
 AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
 USE_PIXEL_CHARGING =: true
 AFTERLIFE_MAINTAINER := NILOY
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -40,6 +40,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
+scr_resolution := 1440
 TARGET_SCREEN_WIDTH := 1440
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_BOOT_ANIMATION_RES := 1440
