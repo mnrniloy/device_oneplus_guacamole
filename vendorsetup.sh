@@ -29,5 +29,5 @@ echo ""
 echo "Cloning Apps"
 git clone https://github.com/KProfiles/android_packages_apps_Kprofiles packages/apps/Kprofiles
 git clone https://gitlab.com/nrniloy369/vendor_oneplus_apps.git vendor/oneplus/apps
-git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX
+git clone https://github.com/swiitch-OFF-Lab/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX
 echo ""
