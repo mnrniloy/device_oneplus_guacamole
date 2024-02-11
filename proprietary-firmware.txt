@@ -1,0 +1,19 @@
+## All proprietary files from this list, unless pinned and noted otherwise, are
+## from OnePlus7ProHydrogen_21.H.46_OTA_0460_ALL_2206171440
+
+LOGO.img;AB
+abl.img;AB
+aop.img;AB
+bluetooth.img;AB
+cmnlib.img;AB
+cmnlib64.img;AB
+devcfg.img;AB
+dsp.img;AB
+hyp.img;AB
+keymaster.img;AB
+modem.img;AB
+qupfw.img;AB
+storsec.img;AB
+tz.img;AB
+xbl.img;AB
+xbl_config.img;AB

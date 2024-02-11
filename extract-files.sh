@@ -19,3 +19,5 @@ export DEVICE_COMMON=sm8150-common
 export VENDOR=oneplus
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
+
+extract_firmware "${MY_DIR}/proprietary-firmware.txt" "${SRC}"

@@ -31,3 +31,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 SOONG_CONFIG_ONEPLUS_MSMNILE_SENSORS_ALS_POS_X := 1010
 SOONG_CONFIG_ONEPLUS_MSMNILE_SENSORS_ALS_POS_Y := 278
 SOONG_CONFIG_ONEPLUS_MSMNILE_SENSORS_ALS_RADIUS := 96
+
+# Include the proprietary files BoardConfig.
+include vendor/oneplus/guacamole/BoardConfigVendor.mk
