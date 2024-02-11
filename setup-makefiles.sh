@@ -13,3 +13,5 @@ export DEVICE_COMMON=sm8150-common
 export VENDOR=oneplus
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
+
+append_firmware_calls_to_makefiles "${MY_DIR}/proprietary-firmware.txt"
