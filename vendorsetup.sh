@@ -5,7 +5,7 @@ git clone https://github.com/mnrniloy/device_oneplus_sm8150-common.git -b 13 dev
 echo ""
 
 echo "Cloning kernel tree"
-git clone https://github.com/mnrniloy/Neptune_kernel_sm8150_oneplus.git -b inline-erofs kernel/oneplus/sm8150
+git clone --depth=1 https://github.com/mnrniloy/Neptune_kernel_sm8150_oneplus.git -b inline-erofs kernel/oneplus/sm8150
 echo ""
 
 echo "Cloning Hardware"
@@ -21,7 +21,7 @@ echo ""
 echo "Cloning Qcom components"
 git clone https://github.com/yaap/device_qcom_common.git -b fourteen device/qcom/common
 git clone https://gitlab.com/yaosp/vendor_qcom_common.git -b fourteen vendor/qcom/common
-git clone https://github.com/mnrniloy/device_qcom_qssi.git device/qcom/qssi
+git clone https://github.com/AOSPA/android_device_qcom_qssi.git device/qcom/qssi
 git clone https://github.com/mnrniloy/vendor_qcom-opensource_core-utils.git vendor/qcom/opensource/core-utils
 echo ""
 

@@ -16,13 +16,11 @@ $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # AfterLife Flags
 AFTERLIFE_GAPPS := true
-AFTERLIFE_CORE := true
 USE_PIXEL_CHARGING =: true
 AFTERLIFE_MAINTAINER := NILOY
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USE_MOTO_CALCULATOR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_USE_GOOGLE_TELEPHONY := true
 TARGET_SUPPORTS_TOUCHGESTURES := true
 
 # Device identifier. This must come after all inclusions.
