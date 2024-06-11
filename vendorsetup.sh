@@ -1,7 +1,7 @@
 # Clone/Fetch Upstream Device Dependencies
 # Device Tree
 echo "Cloning sm8150-Common Tree"
-git clone --depth=1 https://github.com/mnrniloy/device_oneplus_sm8150-common.git -b 14 device/oneplus/sm8150-common
+git clone --depth=1 https://github.com/mnrniloy/device_oneplus_sm8150-common.git -b 14-D device/oneplus/sm8150-common
 echo ""
 
 echo "Cloning kernel tree"
@@ -9,7 +9,7 @@ git clone --depth=1 https://github.com/mnrniloy/Neptune_kernel_oneplus_sm8150.gi
 echo ""
 
 echo "Cloning Hardware"
-git clone https://github.com/mnrniloy/hardware_oneplus.git -b 14 hardware/oneplus
+git clone https://github.com/mnrniloy/hardware_oneplus.git -b 14-D hardware/oneplus
 echo ""
 
 echo "Cloning Vendor blobs"
@@ -19,9 +19,6 @@ echo ""
 
 # Qcom-Caf components
 echo "Cloning Qcom-Caf components"
-rm -rf hardware/qcom-caf/sm8150/audio
-rm -rf hardware/qcom-caf/sm8150/display
-rm -rf hardware/qcom-caf/sm8150/media
 git clone https://github.com/yaap/hardware_qcom-caf_sm8150_audio.git -b fourteen hardware/qcom-caf/sm8150/audio
 git clone https://github.com/yaap/hardware_qcom-caf_sm8150_display.git -b fourteen hardware/qcom-caf/sm8150/display
 git clone https://github.com/yaap/hardware_qcom-caf_sm8150_media.git -b fourteen hardware/qcom-caf/sm8150/media
@@ -38,6 +35,10 @@ echo ""
 
 #  Apps
 echo "Cloning Apps"
+rm -rf packages/apps/DeskClock
+rm -rf packages/apps/Dialer
+git clone https://github.com/yaap/packages_apps_DeskClock.git -b fourteen packages/apps/DeskClock
+git clone https://github.com/yaap/packages_apps_Dialer.git -b fourteen packages/apps/Dialer
 git clone https://github.com/yaap/packages_apps_KProfiles.git -b fourteen packages/apps/KProfiles
 git clone https://gitlab.com/mnrniloy0/vendor_oneplus_camera.git vendor/oneplus/camera
 echo ""
