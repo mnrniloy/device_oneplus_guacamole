@@ -16,6 +16,7 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Flags
 EXTRA_UDFPS_ICONS := true
+TARGET_SHIP_OOSGALLERY := true
 TARGET_USES_PICO_GAPPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
